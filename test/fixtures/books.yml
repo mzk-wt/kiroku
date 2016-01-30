@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tite: 
+  titleKana: 
+  subTitle: 
+  subTitleKana: 
+  seriesName: 
+  seriesNameKana: 
+  author: 
+  authorKana: 
+  publisherName: 
+  size: 
+  isbn: 
+  itemCaption: 
+  salesDate: 
+  itemUrl: 
+  affiliateUrl: 
+  smallImageUrl: 
+  mediumImageUrl: 
+  largeImageUrl: 
+  purchaseDate: 
+  finishReadingDate: 
+  evaluation: 
+  memo: 
+  category: 
+  tags: 
+
+two:
+  tite: 
+  titleKana: 
+  subTitle: 
+  subTitleKana: 
+  seriesName: 
+  seriesNameKana: 
+  author: 
+  authorKana: 
+  publisherName: 
+  size: 
+  isbn: 
+  itemCaption: 
+  salesDate: 
+  itemUrl: 
+  affiliateUrl: 
+  smallImageUrl: 
+  mediumImageUrl: 
+  largeImageUrl: 
+  purchaseDate: 
+  finishReadingDate: 
+  evaluation: 
+  memo: 
+  category: 
+  tags: 

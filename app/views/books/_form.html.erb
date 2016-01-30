@@ -1,0 +1,113 @@
+<%= form_for(@book) do |f| %>
+  <% if @book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tite %><br>
+    <%= f.text_field :tite %>
+  </div>
+  <div class="field">
+    <%= f.label :titleKana %><br>
+    <%= f.text_field :titleKana %>
+  </div>
+  <div class="field">
+    <%= f.label :subTitle %><br>
+    <%= f.text_field :subTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :subTitleKana %><br>
+    <%= f.text_field :subTitleKana %>
+  </div>
+  <div class="field">
+    <%= f.label :seriesName %><br>
+    <%= f.text_field :seriesName %>
+  </div>
+  <div class="field">
+    <%= f.label :seriesNameKana %><br>
+    <%= f.text_field :seriesNameKana %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :authorKana %><br>
+    <%= f.text_field :authorKana %>
+  </div>
+  <div class="field">
+    <%= f.label :publisherName %><br>
+    <%= f.text_field :publisherName %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br>
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :isbn %><br>
+    <%= f.text_field :isbn %>
+  </div>
+  <div class="field">
+    <%= f.label :itemCaption %><br>
+    <%= f.text_field :itemCaption %>
+  </div>
+  <div class="field">
+    <%= f.label :salesDate %><br>
+    <%= f.text_field :salesDate %>
+  </div>
+  <div class="field">
+    <%= f.label :itemUrl %><br>
+    <%= f.text_field :itemUrl %>
+  </div>
+  <div class="field">
+    <%= f.label :affiliateUrl %><br>
+    <%= f.text_field :affiliateUrl %>
+  </div>
+  <div class="field">
+    <%= f.label :smallImageUrl %><br>
+    <%= f.text_field :smallImageUrl %>
+  </div>
+  <div class="field">
+    <%= f.label :mediumImageUrl %><br>
+    <%= f.text_field :mediumImageUrl %>
+  </div>
+  <div class="field">
+    <%= f.label :largeImageUrl %><br>
+    <%= f.text_field :largeImageUrl %>
+  </div>
+  <div class="field">
+    <%= f.label :purchaseDate %><br>
+    <%= f.text_field :purchaseDate %>
+  </div>
+  <div class="field">
+    <%= f.label :finishReadingDate %><br>
+    <%= f.text_field :finishReadingDate %>
+  </div>
+  <div class="field">
+    <%= f.label :evaluation %><br>
+    <%= f.text_field :evaluation %>
+  </div>
+  <div class="field">
+    <%= f.label :memo %><br>
+    <%= f.text_field :memo %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :tags %><br>
+    <%= f.text_field :tags %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
