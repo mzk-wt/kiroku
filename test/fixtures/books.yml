@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  tite: 
+  title: 
   titleKana: 
   subTitle: 
   subTitleKana: 
@@ -27,7 +27,7 @@ one:
   tags: 
 
 two:
-  tite: 
+  title: 
   titleKana: 
   subTitle: 
   subTitleKana: 
