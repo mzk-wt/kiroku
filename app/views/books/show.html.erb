@@ -1,124 +1,103 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
-
-<p>
-  <strong>Titlekana:</strong>
-  <%= @book.titleKana %>
-</p>
-
-<p>
-  <strong>Subtitle:</strong>
-  <%= @book.subTitle %>
-</p>
-
-<p>
-  <strong>Subtitlekana:</strong>
-  <%= @book.subTitleKana %>
-</p>
-
-<p>
-  <strong>Seriesname:</strong>
-  <%= @book.seriesName %>
-</p>
-
-<p>
-  <strong>Seriesnamekana:</strong>
-  <%= @book.seriesNameKana %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
-
-<p>
-  <strong>Authorkana:</strong>
-  <%= @book.authorKana %>
-</p>
-
-<p>
-  <strong>Publishername:</strong>
-  <%= @book.publisherName %>
-</p>
-
-<p>
-  <strong>Size:</strong>
-  <%= @book.size %>
-</p>
-
-<p>
-  <strong>Isbn:</strong>
-  <%= @book.isbn %>
-</p>
-
-<p>
-  <strong>Itemcaption:</strong>
-  <%= @book.itemCaption %>
-</p>
-
-<p>
-  <strong>Salesdate:</strong>
-  <%= @book.salesDate %>
-</p>
-
-<p>
-  <strong>Itemurl:</strong>
-  <%= @book.itemUrl %>
-</p>
-
-<p>
-  <strong>Affiliateurl:</strong>
-  <%= @book.affiliateUrl %>
-</p>
-
-<p>
-  <strong>Smallimageurl:</strong>
-  <%= @book.smallImageUrl %>
-</p>
-
-<p>
-  <strong>Mediumimageurl:</strong>
-  <%= @book.mediumImageUrl %>
-</p>
-
-<p>
-  <strong>Largeimageurl:</strong>
-  <%= @book.largeImageUrl %>
-</p>
-
-<p>
-  <strong>Purchasedate:</strong>
-  <%= @book.purchaseDate %>
-</p>
-
-<p>
-  <strong>Finishreadingdate:</strong>
-  <%= @book.finishReadingDate %>
-</p>
-
-<p>
-  <strong>Evaluation:</strong>
-  <%= @book.evaluation %>
-</p>
-
-<p>
-  <strong>Memo:</strong>
-  <%= @book.memo %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @book.category %>
-</p>
-
-<p>
-  <strong>Tags:</strong>
-  <%= @book.tags %>
-</p>
+<table class="horizonListTable">
+  <tr><th>
+      <%= label :book, :title %></th><td>
+      <%= @book.title %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :titleKana %></th><td>
+      <%= @book.titleKana %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :subTitle %></th><td>
+      <%= @book.subTitle %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :subTitleKana %></th><td>
+      <%= @book.subTitleKana %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :seriesName %></th><td>
+      <%= @book.seriesName %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :seriesNameKana %></th><td>
+      <%= @book.seriesNameKana %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :author %></th><td>
+      <%= @book.author %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :authorKana %></th><td>
+      <%= @book.authorKana %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :publisherName %></th><td>
+      <%= @book.publisherName %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :size %></th><td>
+      <%= @book.size %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :isbn %></th><td>
+      <%= @book.isbn %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :itemCaption %></th><td>
+      <%= @book.itemCaption %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :salesDate %></th><td>
+      <%= @book.salesDate %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :itemUrl %></th><td>
+      <%= @book.itemUrl %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :affiliateUrl %></th><td>
+      <%= @book.affiliateUrl %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :smallImageUrl %></th><td>
+      <%= @book.smallImageUrl %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :mediumImageUrl %></th><td>
+      <%= @book.mediumImageUrl %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :largeImageUrl %></th><td>
+      <%= @book.largeImageUrl %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :purchaseDate %></th><td>
+      <%= @book.purchaseDate %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :finishReadingDate %></th><td>
+      <%= @book.finishReadingDate %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :evaluation %></th><td>
+      <%= @book.evaluation %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :memo %></th><td>
+      <%= @book.memo %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :category %></th><td>
+      <%= @book.category %>
+  </td></tr>
+  <tr><th>
+      <%= label :book, :tags %></th><td>
+      <%= @book.tags %>
+  </td></tr>
+</table>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>

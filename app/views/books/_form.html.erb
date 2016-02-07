@@ -11,102 +11,104 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :titleKana %><br>
-    <%= f.text_field :titleKana %>
-  </div>
-  <div class="field">
-    <%= f.label :subTitle %><br>
-    <%= f.text_field :subTitle %>
-  </div>
-  <div class="field">
-    <%= f.label :subTitleKana %><br>
-    <%= f.text_field :subTitleKana %>
-  </div>
-  <div class="field">
-    <%= f.label :seriesName %><br>
-    <%= f.text_field :seriesName %>
-  </div>
-  <div class="field">
-    <%= f.label :seriesNameKana %><br>
-    <%= f.text_field :seriesNameKana %>
-  </div>
-  <div class="field">
-    <%= f.label :author %><br>
-    <%= f.text_field :author %>
-  </div>
-  <div class="field">
-    <%= f.label :authorKana %><br>
-    <%= f.text_field :authorKana %>
-  </div>
-  <div class="field">
-    <%= f.label :publisherName %><br>
-    <%= f.text_field :publisherName %>
-  </div>
-  <div class="field">
-    <%= f.label :size %><br>
-    <%= f.text_field :size %>
-  </div>
-  <div class="field">
-    <%= f.label :isbn %><br>
-    <%= f.text_field :isbn %>
-  </div>
-  <div class="field">
-    <%= f.label :itemCaption %><br>
-    <%= f.text_field :itemCaption %>
-  </div>
-  <div class="field">
-    <%= f.label :salesDate %><br>
-    <%= f.text_field :salesDate %>
-  </div>
-  <div class="field">
-    <%= f.label :itemUrl %><br>
-    <%= f.text_field :itemUrl %>
-  </div>
-  <div class="field">
-    <%= f.label :affiliateUrl %><br>
-    <%= f.text_field :affiliateUrl %>
-  </div>
-  <div class="field">
-    <%= f.label :smallImageUrl %><br>
-    <%= f.text_field :smallImageUrl %>
-  </div>
-  <div class="field">
-    <%= f.label :mediumImageUrl %><br>
-    <%= f.text_field :mediumImageUrl %>
-  </div>
-  <div class="field">
-    <%= f.label :largeImageUrl %><br>
-    <%= f.text_field :largeImageUrl %>
-  </div>
-  <div class="field">
-    <%= f.label :purchaseDate %><br>
-    <%= f.text_field :purchaseDate %>
-  </div>
-  <div class="field">
-    <%= f.label :finishReadingDate %><br>
-    <%= f.text_field :finishReadingDate %>
-  </div>
-  <div class="field">
-    <%= f.label :evaluation %><br>
-    <%= f.text_field :evaluation %>
-  </div>
-  <div class="field">
-    <%= f.label :memo %><br>
-    <%= f.text_field :memo %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br>
-    <%= f.text_field :category %>
-  </div>
-  <div class="field">
-    <%= f.label :tags %><br>
-    <%= f.text_field :tags %>
-  </div>
+  <table class="horizonListTable">
+    <tr><th>
+        <%= f.label :title %></th><td>
+        <%= f.text_field :title %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :titleKana %></th><td>
+        <%= f.text_field :titleKana %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :subTitle %></th><td>
+        <%= f.text_field :subTitle %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :subTitleKana %></th><td>
+        <%= f.text_field :subTitleKana %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :seriesName %></th><td>
+        <%= f.text_field :seriesName %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :seriesNameKana %></th><td>
+        <%= f.text_field :seriesNameKana %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :author %></th><td>
+        <%= f.text_field :author %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :authorKana %></th><td>
+        <%= f.text_field :authorKana %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :publisherName %></th><td>
+        <%= f.text_field :publisherName %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :size %></th><td>
+        <%= f.text_field :size %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :isbn %></th><td>
+        <%= f.text_field :isbn %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :itemCaption %></th><td>
+        <%= f.text_field :itemCaption %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :salesDate %></th><td>
+        <%= f.text_field :salesDate %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :itemUrl %></th><td>
+        <%= f.text_field :itemUrl %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :affiliateUrl %></th><td>
+        <%= f.text_field :affiliateUrl %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :smallImageUrl %></th><td>
+        <%= f.text_field :smallImageUrl %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :mediumImageUrl %></th><td>
+        <%= f.text_field :mediumImageUrl %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :largeImageUrl %></th><td>
+        <%= f.text_field :largeImageUrl %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :purchaseDate %></th><td>
+        <%= f.text_field :purchaseDate %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :finishReadingDate %></th><td>
+        <%= f.text_field :finishReadingDate %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :evaluation %></th><td>
+        <%= f.text_field :evaluation %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :memo %></th><td>
+        <%= f.text_field :memo %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :category %></th><td>
+        <%= f.text_field :category %>
+    </td></tr>
+    <tr><th>
+        <%= f.label :tags %></th><td>
+        <%= f.text_field :tags %>
+    </td></tr>
+  </table>
   <div class="actions">
     <%= f.submit %>
   </div>

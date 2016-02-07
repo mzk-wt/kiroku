@@ -1,0 +1,29 @@
+ja:
+  activerecord:
+    attributes:
+      book:
+        title:              'タイトル'
+        titleKana:          'タイトル（かな）'
+        subTitle:           'サブタイトル'
+        subTitleKana:       'サブタイトル（かな）'
+        seriesName:         'シリーズ名'
+        seriesNameKana:     'シリーズ名（かな）'
+        author:             '著者'
+        authorKana:         '著者（かな）'
+        publisherName:      '出版元'
+        size:               '書籍のサイズ'
+        isbn:               'ISBN'
+        itemCaption:        '商品説明'
+        salesDate:          '発売日'
+        itemUrl:            '商品URL'
+        affiliateUrl:       'アフィリエイトURL'
+        smallImageUrl:      '商品画像URL(64x64)'
+        mediumImageUrl:     '商品画像URL(128x128)'
+        largeImageUrl:      '商品画像URL(200x200)'
+        purchaseDate:       '購入日'
+        finishReadingDate:  '読了日'
+        evaluation:         '評価'
+        memo:               'メモ'
+        category:           'カテゴリー'
+        tags:               'タグ'
+
