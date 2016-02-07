@@ -1,3 +1,23 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.verticalListTable {
+  border-collapse: collapse;
+  text-align: center;
+  line-height: 1.5px;
+  border: 1px solid #ccc;
+
+  th {
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #c00;
+    background: #dcdcd1;
+  }
+
+  td {
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+  }
+}
