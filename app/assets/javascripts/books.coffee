@@ -25,7 +25,7 @@ $ ->
       dataType: 'jsonp',
       success: (json) ->
         console.log(json.Items[0].Item.title)
-        alert(json.Items[0].Item.title)
+        return false
     })
 
     return false
