@@ -16,12 +16,15 @@ $ ->
     query = title + isbn
     url = base + version + "?" + applicationId + query
 
+    console.log("aaa")
+
     # API呼び出し
     $.ajax({
       type: 'GET',
       url: url,
       dataType: 'jsonp',
       success: (json) ->
+        console.log(json.Items[0].Item.title)
         alert(json.Items[0].Item.title)
     })
 
