@@ -2,9 +2,6 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-# JSONPの使い方
-# http://techblog.yahoo.co.jp/javascript/jsonpjavascript/
-
 $ ->
   $("#searchBtn").click ->
     base = "https://app.rakuten.co.jp/services/api/BooksBook/Search/"
@@ -16,16 +13,15 @@ $ ->
     query = title + isbn
     url = base + version + "?" + applicationId + query
 
-    console.log("aaa")
-
     # API呼び出し
     $.ajax({
       type: 'GET',
       url: url,
       dataType: 'jsonp',
       success: (json) ->
-        console.log(json.Items[0].Item.title)
-        return false
+        for key, val of json.Items[0].Item
+          obj = $("#book_" + key)
+          obj.val(val) if obj
     })
 
     return false
