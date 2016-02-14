@@ -21,12 +21,9 @@ $ ->
       type: 'GET',
       url: url,
       dataType: 'jsonp',
-      jsonpCallback: 'callBackJSONP',
       success: (json) ->
-        alert("success")
+        alert(json.Items[0].Item.title)
     })
-    #callJSONP(url)
-
 
     return false
 
@@ -40,16 +37,3 @@ getQuery = (key, enc) ->
   else
     return ""
 
-#---------------------------
-# JSONP呼び出し
-callJSONP = (url) ->
-  $("<script/>", { charset:'utf-8', src:url }).appendTo("body")
-
-#---------------------------
-# JSONPのコールバック関数
-callBackJSONP = (json) ->
-  if json.count > 0
-    item = json.item[0]
-    alert(item.title)
-  else
-    alert("失敗")
