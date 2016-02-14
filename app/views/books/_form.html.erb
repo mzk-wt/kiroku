@@ -1,3 +1,13 @@
+<%= label :q, "Search for:" %>
+<%= select :s, "itemSel", @itemSel.map{|k, v| [v, k]} %>
+<%= text_field :q, "search" %>
+<%= link_to "Search", {}, {:id => "searchBtn"} %>
+
+<%= hidden_field "act", act %>
+
+<br>
+<br>
+
 <%= form_for(@book) do |f| %>
   <% if @book.errors.any? %>
     <div id="error_explanation">
