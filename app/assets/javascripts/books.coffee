@@ -10,13 +10,23 @@ $ ->
     base = "https://app.rakuten.co.jp/services/api/BooksBook/Search/"
     version = "20130522"
     applicationId = "applicationId=1015329897212975299"
-    callback = "&callback=" + encodeURIComponent("callBackJSONP")
     title = getQuery("title", true)
     isbn = getQuery("isbn", false)
 
     query = title + isbn
-    url = base + version + "?" + applicationId + query + callback
-    callJSONP(url)
+    url = base + version + "?" + applicationId + query
+
+    # API呼び出し
+    $.ajax({
+      type: 'GET',
+      url: url,
+      dataType: 'jsonp',
+      jsonpCallback: 'callBackJSONP',
+      success: (json) ->
+        alert("success")
+    })
+    #callJSONP(url)
+
 
     return false
 
